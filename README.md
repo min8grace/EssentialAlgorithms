@@ -1,13 +1,13 @@
 # EssentialAlgorithms
 
 <Sort>
-Selection Sort
-Bubble Sort
-Insertion Sort
-Quick Sort
-Merge Sort
-Heap Sort
-Counting Sort
+ Selection Sort
+ Bubble Sort
+ Insertion Sort
+ Quick Sort
+ Merge Sort
+ Heap Sort
+ Counting Sort
 
 <Searching>
 BFS (Breath First Serach)
