@@ -9,17 +9,17 @@
  - Heap Sort
  - Counting Sort
 
-<Searching>
-BFS (Breath First Serach)
-DFS (Depth First Search)
-Union Find
+2. Searching
+ - BFS (Breath First Serach)
+ - DFS (Depth First Search)
+ - Union Find
 
-<Dynamic Programming>
-Dijkstra 
-Floyd Warshall
-Topology Sort
-Strongly Connected
-Network Flow
-Bipartite Matching
-Rabin-Karp
-Greedy
+3. Dynamic Programming
+ - Dijkstra 
+ - Floyd Warshall
+ - Topology Sort
+ - Strongly Connected
+ - Network Flow
+ - Bipartite Matching
+ - Rabin-Karp
+ - Greedy
