@@ -1,4 +1,4 @@
-# EssentialAlgorithms
+# Essential Algorithms
 
 1. Sort
  - Selection Sort
