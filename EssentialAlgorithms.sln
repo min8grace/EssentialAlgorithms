@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sort", "Sort\Sort.csproj", "{5AA81FF8-867B-4C8E-A81A-94471B052AAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicProgramming", "DynamicProgramming\DynamicProgramming.csproj", "{CADC96DE-5A0E-437C-9C56-3B7614CEF98A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graph", "Graph\Graph.csproj", "{25F725C4-B31B-48DC-9D26-BDB345655120}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{5AA81FF8-867B-4C8E-A81A-94471B052AAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AA81FF8-867B-4C8E-A81A-94471B052AAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AA81FF8-867B-4C8E-A81A-94471B052AAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CADC96DE-5A0E-437C-9C56-3B7614CEF98A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CADC96DE-5A0E-437C-9C56-3B7614CEF98A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CADC96DE-5A0E-437C-9C56-3B7614CEF98A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CADC96DE-5A0E-437C-9C56-3B7614CEF98A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{25F725C4-B31B-48DC-9D26-BDB345655120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{25F725C4-B31B-48DC-9D26-BDB345655120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{25F725C4-B31B-48DC-9D26-BDB345655120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{25F725C4-B31B-48DC-9D26-BDB345655120}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
