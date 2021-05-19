@@ -5,7 +5,7 @@ namespace DynamicProgramming
 {
     class PrimeNumber
     {
-        static void Start()
+        static void Main(string[] args)
         {
             Console.WriteLine("Enter the number");
             string input = Console.ReadLine();

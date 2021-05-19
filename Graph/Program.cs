@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using static Graph.KruskalAlgorithm;
 
 namespace Graph
 {
@@ -6,20 +8,45 @@ namespace Graph
     {
         static void Main(string[] args)
         {
-            int[] parent = new int[11];
-            for(int i = 1; i <= 10; i++)
+            int n = 7;
+            int m = 11;
+            List<Edge> v = new List<Edge>();
+            v.Add(new Edge(1, 7, 12));
+            v.Add(new Edge(1, 4, 28));
+            v.Add(new Edge(1, 2, 67));
+            v.Add(new Edge(1, 5, 17));
+            v.Add(new Edge(2, 4, 24));
+            v.Add(new Edge(2, 5, 62));
+            v.Add(new Edge(3, 5, 20));
+            v.Add(new Edge(3, 6, 37));
+            v.Add(new Edge(4, 7, 13));
+            v.Add(new Edge(5, 6, 45));
+            v.Add(new Edge(5, 7, 73));
+
+
+            // ascending oder based on the distances of nodes
+            v.Sort((a, b) => a.distance.CompareTo(b.distance));
+            v.ForEach(x => Console.WriteLine(x.distance));
+
+            int[] parent = new int[n];
+            for(int i = 0; i < n; i++)
             {
                 parent[i] = i;
             }
 
-            UnionFind uf = new UnionFind();
-            uf.unionParent(parent, 1, 2);
-            uf.unionParent(parent, 2, 3);
-            uf.unionParent(parent, 3, 4);
-            uf.unionParent(parent, 5, 6);
-            uf.unionParent(parent, 6, 7);
-            uf.unionParent(parent, 7, 8);
-            Console.WriteLine($"Are 1 and 5 conneted? = { uf.sameParentsCheck(parent,1,5)}");
+            int sum = 0;
+            KruskalAlgorithm ka = new KruskalAlgorithm();
+            for (int i = 0; i < v.Count; i++)
+            {
+                //
+                if (!ka.sameParentsCheck(parent, v[i].node[0] - 1, v[i].node[1] - 1))
+                {
+                    sum += v[i].distance;
+                    ka.unionParent(parent, v[i].node[0] - 1, v[i].node[1] - 1); 
+                }
+            }
+
+            Console.WriteLine(sum);
         }
     }
 }
